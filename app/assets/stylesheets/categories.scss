@@ -1,7 +1,13 @@
 // Place all the styles related to the categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.container {
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.card-houses {
     display: flex;
     justify-content: space-around;
     align-items: center;

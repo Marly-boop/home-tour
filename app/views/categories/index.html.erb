@@ -1,8 +1,11 @@
 <div class="container">
-  <% @houses.each do |house| %>
-    <div class="card-houses">
-      <h1><%=house.name%></h1>
-      <%=image_tag "van-house.jpg"%>
-    </div>
-  <% end %>
+  <div>
+    <%=video_tag "Hometour.mp4", height: "auto", width: "100%", autoplay: true, loop: true, controles: true%>
+  </div>
+  <div class="card-houses">
+    <% @houses.each do |house| %>
+        <h1><%=house.name%></h1>
+        <%=image_tag "van-house.jpg"%>
+    <% end %>
+  </div>
 </div>
