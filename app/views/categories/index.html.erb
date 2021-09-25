@@ -1,11 +1,11 @@
 <div class="container">
   <div>
-    <%=video_tag "Hometour.mp4", height: "auto", width: "100%", autoplay: true, loop: true, controles: true%>
+    <%=video_tag "Hometour.mp4", height: "auto", width: "100%", autoplay: true, loop: true%>
   </div>
   <div class="card-houses">
-    <% @houses.each do |house| %>
-        <h1><%=house.name%></h1>
-        <%=image_tag "van-house.jpg"%>
-    <% end %>
+    <%@houses.each do |house| %>
+      <h1><%=house.name%></h1>
+      <%=image_tag house.picture%>
+    <%end%>
   </div>
 </div>

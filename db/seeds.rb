@@ -10,9 +10,14 @@ p "Emptying data..."
 House.destroy_all
 Category.destroy_all
 p "Creating categories..."
-Category.create([
-    {name: 'Van house'},#, description: 'All we need in a van your house can go with you wherever you want!'},
-    {name: 'Suspend house'},#, description: 'You will see all the magic world with this panoramic view!'},
-    {name: 'Forest house'}#, description: 'The best way to be closer than ever with the nature!'}
-])
+first = Category.create({name: 'Van house'})#, description: 'All we need in a van your house can go with you wherever you want!'},
+second = Category.create({name: 'Suspend house'})#, description: 'You will see all the magic world with this panoramic view!'},
+last = Category.create({name: 'Forest house'})#, description: 'The best way to be closer than ever with the nature!'}
 
+first.picture.attach(io: File.open("app/assets/images/van-house.jpg"), filename: "img.jpg")
+second.picture.attach(io: File.open("app/assets/images/suspend-house.jpg"), filename: "img.jpg")
+last.picture.attach(io: File.open("app/assets/images/tiny-house.jpg"), filename: "img.jpg")
+
+first.save!
+second.save!
+last.save!

@@ -8,7 +8,7 @@ body, html {
 }
 
 .card-houses {
-    display: flex;
+    display: grid;
     justify-content: space-around;
     align-items: center;
     width: 100%;
