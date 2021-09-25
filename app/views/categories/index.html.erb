@@ -1,0 +1,8 @@
+<div class="container">
+  <% @houses.each do |house| %>
+    <div class="card-houses">
+      <h1><%=house.name%></h1>
+      <%=image_tag "van-house.jpg"%>
+    </div>
+  <% end %>
+</div>
