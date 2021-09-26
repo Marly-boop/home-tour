@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
   def index
-    @houses = Category.includes(:houses)
+    @houses = Category.all
   end
 end
