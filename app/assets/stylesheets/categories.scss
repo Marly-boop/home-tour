@@ -14,3 +14,60 @@ body, html {
     width: 100%;
     position: relative;
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card-type {
+    background-size: cover;
+    background-position: center;
+    height: 310px;
+    width: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 400px) and (max-width: 676px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 676px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 828px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1400px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
