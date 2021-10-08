@@ -9,6 +9,3 @@ require 'open-uri'
 
 p "Emptying data..."
 House.destroy_all
-Category.destroy_all
-
-p "Creating categories..."
