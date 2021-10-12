@@ -1,9 +1,13 @@
 <div class="container">
   <div>
     <ul class="list-inline tabs-underlined">
-      <a href="#" class="tab-underlined active">Histoire</a>
+      <%= link_to pages_history_path do %> 
+        <div class="tab-underlined active"> Histoire </div> 
+      <% end %>
       <a href="#" class="tab-underlined">Categories</a>
-      <a href="#" class="tab-underlined">Demonstrations</a>
+      <%= link_to pages_demo_path do %> 
+        <div class="tab-underlined"> Demonstrations </div>
+      <% end %>
     </ul>
     <%=video_tag "Hometour.mp4", height: "auto", width: "100%", autoplay: true, loop: true%>
   </div>
