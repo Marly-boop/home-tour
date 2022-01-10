@@ -5,10 +5,11 @@
     </div>
     <h1>Les Categories</h1>
     <div class="cards">
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/400x300/?van-vw)">
-        Van
-      </div>
-
+      <%= link_to vans_path(@vans) do %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/400x300/?van-vw)">
+          Van
+        </div>
+      <% end %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/400x300/?container-house)">
         Conteneur
       </div>
