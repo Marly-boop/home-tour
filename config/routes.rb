@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :vans
   get 'pages/history'
   get 'houses/shct', to: 'houses#search_category'
   get 'pages/history', to: 'pages#history'

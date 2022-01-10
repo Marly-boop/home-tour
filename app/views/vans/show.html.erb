@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @van.description %>
+</p>
+
+<p>
+  <strong>Lien:</strong>
+  <%= @van.lien %>
+</p>
+
+<%= link_to 'Edit', edit_van_path(@van) %> |
+<%= link_to 'Back', vans_path %>
