@@ -43,7 +43,8 @@ ActiveRecord::Schema.define(version: 2022_01_10_172002) do
 
   create_table "vans", force: :cascade do |t|
     t.text "description"
-    t.string "lien"
+    t.string "link"
+    t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
